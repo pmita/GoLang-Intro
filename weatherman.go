@@ -13,18 +13,14 @@ type WeatherData struct{
 	Timezone 		string	`json:"timezone"`
 	Currently struct{
 		//Time 		int		`json:"time"`
-		Summary		string	`json:"summary"` //Acceptable summarys: sunny, tropical, clear-day
+		Summary		string	`json:"summary"` //Acceptable summarys: Clear, Overcast, Partly Cloudy, etc.
 		//Temperature	float64	`json:"temperature"`
 		//Visibility	float64	`json:"visibility"` //Viisibility needs to be >= 5 
 	} `json:"currently"`
 }
 
-	//matrix := [][]string{{"cat", "cat", "cat"}, {"dog", "dog"}}
-
 
 func main(){
-
-
 	citiesToVisit := [][] string {
 		{"LHR", "51.5074", "0.1278"},
 		{"ATH","37.9838","23.7275"},
