@@ -39,7 +39,7 @@ func main(){
 	
 	j:=1
 	for i:=0; i<10; i++{
-			var urlAPI = fmt.Sprintf("https://api.darksky.net/forecast/58ffcf3ca186b5068bc9918ad2c16d8e/%s,%s",citiesToVisit[i][j], citiesToVisit[i][j+1])
+			var urlAPI = fmt.Sprintf("https://api.darksky.net/forecast/yourAPIkeyGoesHere/%s,%s",citiesToVisit[i][j], citiesToVisit[i][j+1])
 			response, err :=http.Get(urlAPI)
 			if err != nil{
 				fmt.Println("Failed HTTP request %s\n", err)
