@@ -16,8 +16,8 @@ type WeatherData struct{
 
 type FlightData struct{
 	FlightStatuses []struct{
-		FlightID				int		`json:"flightID"`
-		FlightNumber 			int 	`json:"flightNumber"`
+		FlightID		int	`json:"flightID"`
+		FlightNumber 		int 	`json:"flightNumber"`
 		DepartureAirportFsCode	string	`json:"departureAirportFsCode"`
 	}`json:"flightStatuses"`
 }
