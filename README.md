@@ -1,2 +1,1 @@
-# Team-odyssea
-Learning curve for Go lang
+# Learning curve for Go lang
